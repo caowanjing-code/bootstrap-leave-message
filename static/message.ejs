@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>message</title>
+</head>
+<body>
+  <a href="/index">发表留言页面</a>
+    <table class="table">
+        <tbody>
+          <tr>
+            <td>username</td>
+            <td>content</td>
+            <td>time</td>
+          </tr>
+        </tbody>
+
+        <% messages.forEach((mess)=>{
+           %>
+           <tr>
+             <td><%= mess.name %></td>
+             <td><%= mess.content %></td>
+             <td><%= mess.time %></td>
+             </tr>
+             <% }) %>
+      </table>
+
+      <script src="./js/jquery.slim.min.js"></script>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
